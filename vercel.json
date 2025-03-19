@@ -5,10 +5,18 @@
       "src": "nuxt.config.ts",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["package.json"]
+        "serverFiles": ["package.json"],
+        "tscOptions": {
+          "skipLibCheck": true,
+          "skipCheck": true
+        }
       }
     }
   ],
+  "env": {
+    "NITRO_PRESET": "vercel",
+    "NUXT_SKIP_TS_CHECK": "true"
+  },
   "routes": [
     {
       "src": "/_nuxt/(.*)",

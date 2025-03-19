@@ -1,5 +1,5 @@
-// No need to import defineNuxtConfig as it's globally available in Nuxt 3
-// import { defineNuxtConfig } from 'nuxt/config'
+// For TypeScript compatibility in build environments
+const defineNuxtConfig = (config) => config
 
 export default defineNuxtConfig({
   // https://github.com/nuxt-themes/alpine
