@@ -2,6 +2,9 @@
   "name": "alpine-starter",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
@@ -14,6 +17,7 @@
     "@nuxt/devtools": "^1.0.8",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxtjs/plausible": "^0.2.4",
+    "@nuxtjs/vercel-builder": "^0.24.0",
     "@types/node": "^20.11.24",
     "eslint": "^8.57.0",
     "nuxt": "^3.10.3"
