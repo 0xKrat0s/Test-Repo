@@ -1,15 +1,12 @@
 {
   "version": 2,
+  "buildCommand": "npm run vercel-build",
   "builds": [
     {
       "src": "nuxt.config.ts",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["package.json"],
-        "tscOptions": {
-          "skipLibCheck": true,
-          "skipCheck": true
-        }
+        "serverFiles": ["package.json"]
       }
     }
   ],

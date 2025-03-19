@@ -1,7 +1,5 @@
-// For TypeScript compatibility in build environments
-const defineNuxtConfig = (config) => config
-
-export default defineNuxtConfig({
+// Using export default directly to avoid TypeScript issues
+export default {
   // https://github.com/nuxt-themes/alpine
   extends: '@nuxt-themes/alpine',
 
@@ -37,4 +35,4 @@ export default defineNuxtConfig({
       ]
     }
   }
-})
+}
